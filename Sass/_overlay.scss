@@ -1,0 +1,52 @@
+/* Crea el Overlay arriba de las imagenes en la pestaña lanzamientos */
+
+@import "mixin";
+
+.contenedor {
+    
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+        
+        .overlay {
+            opacity: 1;
+            animation: fadeIn;
+            animation-duration: 1s;
+            }
+        
+        img {
+            filter: blur(1px);
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        @include set_position (0, 0, 0, 0);
+        height: auto;
+        width: auto;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        align-items: center;
+
+        .juego {
+            @media screen and (max-width: 992px) {
+                font-size: 1rem;
+            }
+
+            font-family: $font-principal;
+            color: $color-principal;
+            text-align: center;
+        }
+
+        .fecha {
+            @media screen and (max-width: 992px) {
+                font-size: 1rem;
+            }
+            font-family: $font-principal;
+            color: $color-principal;
+            text-align: center;
+        }
+
+    }
+}

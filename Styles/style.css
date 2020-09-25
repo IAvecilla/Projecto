@@ -1,0 +1,167 @@
+@charset "UTF-8";
+/* Crea el Overlay arriba de las imagenes en la pestaña lanzamientos */
+.contenedor {
+  position: relative;
+  overflow: hidden;
+}
+
+.contenedor:hover .overlay {
+  opacity: 1;
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.contenedor:hover img {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+.contenedor .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  width: auto;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedor .overlay .juego {
+  font-family: "Roboto";
+  color: #f9c49a;
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .contenedor .overlay .juego {
+    font-size: 1rem;
+  }
+}
+
+.contenedor .overlay .fecha {
+  font-family: "Roboto";
+  color: #f9c49a;
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .contenedor .overlay .fecha {
+    font-size: 1rem;
+  }
+}
+
+body {
+  background-color: #fdfdfd;
+}
+
+header {
+  background-color: #f9c49a;
+}
+
+nav {
+  font-size: 1.4rem;
+  font-family: "Roboto";
+  background-color: #f9c49a;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #F5F4F2;
+}
+
+nav li a:hover {
+  color: white;
+}
+
+.navAnalisis {
+  background-color: transparent;
+}
+
+.headerAnalisis {
+  background-color: transparent;
+  z-index: 1;
+}
+
+.img-container {
+  overflow: hidden;
+}
+
+aside {
+  border-top: #bd682f solid 10px;
+  height: 550px;
+}
+
+aside img {
+  height: 80px;
+}
+
+.card-title {
+  font-family: "Press Start 2P";
+  font-size: 5rem;
+}
+
+@media screen and (max-width: 576px) {
+  .card-title {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-title {
+    font-size: 2rem;
+  }
+}
+
+.card-text {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .card-text {
+    font-size: 1rem;
+  }
+}
+
+h3 .titulo, p .titulo {
+  color: black;
+  font-family: "Roboto";
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+  h3 .titulo, p .titulo {
+    font-size: 1.3rem;
+  }
+}
+
+h3 .titulo:hover, p .titulo:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.imagenPortada {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.imagenPortada:hover {
+  -webkit-transform: scale(1.04, 1.04);
+          transform: scale(1.04, 1.04);
+}
+
+footer {
+  background-color: #bd682f;
+}
+
+footer h3 .red {
+  text-decoration: none;
+  color: #F5F4F2;
+}
+/*# sourceMappingURL=style.css.map */

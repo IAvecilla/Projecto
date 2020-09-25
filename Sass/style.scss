@@ -1,0 +1,151 @@
+@import "variables";
+@import "overlay";
+
+body {
+    background-color: #fdfdfd;
+}
+
+header {
+    background-color: $color-principal;
+}
+
+nav {
+    font-size: 1.4rem;
+    font-family: $font-principal;
+    background-color: $color-principal;
+    
+    li {
+        
+        a {
+            text-decoration: none;
+            color: #F5F4F2;
+            
+            &:hover {
+                
+                color: white;
+            }
+        }
+    }
+}
+
+.navAnalisis {
+    background-color: transparent;
+}
+
+.headerAnalisis {
+    background-color: transparent;
+    z-index: 1;
+}
+
+.img-container {
+    overflow: hidden;
+}
+
+aside {
+    border-top: $color-secundario solid 10px;
+    height: 550px;
+
+    img {
+        height: 80px;
+    }
+}
+
+.card-title {
+    
+    font-family: "Press Start 2P";
+    font-size: 5rem;
+   
+    @media screen and (max-width: 576px) {
+        font-size: 1rem; 
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 2rem; 
+    }
+
+}
+
+.card-text {
+    font-size: 1.5rem;
+    
+    @media screen and (max-width: 768px) {
+        font-size: 1rem; 
+    }
+}
+
+h3, p {
+    
+    .titulo {
+        color: black;
+        font-family: $font-principal;
+        font-weight: bolder;
+        
+        @media screen and (max-width: 768px) {
+            font-size: 1.3rem;
+        }
+
+        &:hover {
+            
+            color: black;
+            text-decoration: none;
+
+        }
+    }
+}
+
+
+.imagenPortada {
+    transition: all 0.3s;
+
+    &:hover {
+        transform: scale(1.04, 1.04);
+    }
+}
+
+footer {
+    background-color: $color-secundario;
+    
+    h3 {
+        
+        .red {
+            text-decoration: none;
+            color: #F5F4F2;
+        }
+    }
+}
+
+
+@if $theme == Dark {
+    body {
+        background-color: $dark-body;
+    }
+
+    p {
+        color: white;
+    }
+
+    @for $i from 1 through 5 {
+        h#{$i} {
+            color: white;
+        }
+    }
+
+    h3 {
+        a {
+            color: white !important;
+        }
+    }
+
+    header {
+        background-color: $dark-color-principal;
+    }
+
+    nav {
+        background-image: linear-gradient($dark-color-principal, $dark-color-secundario);
+    }
+
+    footer {
+        background-color: $dark-color-secundario;
+    }
+
+}
