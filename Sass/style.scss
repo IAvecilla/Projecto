@@ -28,6 +28,31 @@ nav {
     }
 }
 
+article {
+    font-family: $font-principal;
+}
+
+.textoPrincipal {
+    
+    p {
+        font-size: 1.3rem;
+
+        @media screen and  (max-width: 620px) {
+            font-size: 1rem;
+        }
+    }
+}
+
+.logoPortada {
+    width: 400px;
+}
+
+.inicialTexto {
+    font-size: 3rem;
+    color: $color-principal;
+}
+
+
 .navAnalisis {
     background-color: transparent;
 }
@@ -39,6 +64,13 @@ nav {
 
 .img-container {
     overflow: hidden;
+}
+
+.portada {
+    @media screen and (min-width: 1920px) {
+        width: 100%; 
+    }
+    filter: opacity(60%);
 }
 
 aside {
@@ -54,6 +86,7 @@ aside {
     
     font-family: "Press Start 2P";
     font-size: 5rem;
+    color: $color-secundario;
    
     @media screen and (max-width: 576px) {
         font-size: 1rem; 
@@ -141,7 +174,7 @@ footer {
     }
 
     nav {
-        background-image: linear-gradient($dark-color-principal, $dark-color-secundario);
+        background-color: $dark-color-principal;
     }
 
     footer {

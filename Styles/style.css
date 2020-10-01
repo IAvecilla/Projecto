@@ -80,6 +80,29 @@ nav li a:hover {
   color: white;
 }
 
+article {
+  font-family: "Roboto";
+}
+
+.textoPrincipal p {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 620px) {
+  .textoPrincipal p {
+    font-size: 1rem;
+  }
+}
+
+.logoPortada {
+  width: 400px;
+}
+
+.inicialTexto {
+  font-size: 3rem;
+  color: #f9c49a;
+}
+
 .navAnalisis {
   background-color: transparent;
 }
@@ -91,6 +114,17 @@ nav li a:hover {
 
 .img-container {
   overflow: hidden;
+}
+
+.portada {
+  -webkit-filter: opacity(60%);
+          filter: opacity(60%);
+}
+
+@media screen and (min-width: 1920px) {
+  .portada {
+    width: 100%;
+  }
 }
 
 aside {
@@ -105,6 +139,7 @@ aside img {
 .card-title {
   font-family: "Press Start 2P";
   font-size: 5rem;
+  color: #bd682f;
 }
 
 @media screen and (max-width: 576px) {
