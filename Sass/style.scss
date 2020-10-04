@@ -32,6 +32,17 @@ article {
     font-family: $font-principal;
 }
 
+.btn-outline-light {
+    color: $color-principal;
+    border-color: $color-principal;
+
+    &:hover {
+        background-color: $color-secundario;
+        color: white;
+
+    }
+}
+
 .textoPrincipal {
     
     p {
@@ -44,7 +55,13 @@ article {
 }
 
 .logoPortada {
-    width: 400px;
+    @media screen and (min-width: 450px) {
+        width: 400px;
+    }
+    @media screen and (max-width: 768px) {
+        width: 300px;
+        
+    }
 }
 
 .inicialTexto {

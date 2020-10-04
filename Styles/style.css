@@ -84,6 +84,16 @@ article {
   font-family: "Roboto";
 }
 
+.btn-outline-light {
+  color: #f9c49a;
+  border-color: #f9c49a;
+}
+
+.btn-outline-light:hover {
+  background-color: #bd682f;
+  color: white;
+}
+
 .textoPrincipal p {
   font-size: 1.3rem;
 }
@@ -94,8 +104,16 @@ article {
   }
 }
 
-.logoPortada {
-  width: 400px;
+@media screen and (min-width: 450px) {
+  .logoPortada {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logoPortada {
+    width: 300px;
+  }
 }
 
 .inicialTexto {
