@@ -28,9 +28,6 @@
   width: auto;
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.7);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .contenedor .overlay .juego {
@@ -114,6 +111,11 @@ article {
   .logoPortada {
     width: 300px;
   }
+}
+
+.carousel-item img {
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
 }
 
 .inicialTexto {

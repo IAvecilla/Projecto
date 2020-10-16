@@ -64,6 +64,13 @@ article {
     }
 }
 
+.carousel-item {
+
+    img {
+        filter: brightness(60%);
+    }
+}
+
 .inicialTexto {
     font-size: 3rem;
     color: $color-principal;
