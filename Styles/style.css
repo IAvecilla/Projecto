@@ -31,7 +31,6 @@
 }
 
 .contenedor .overlay .juego {
-  font-family: "Roboto";
   color: #f9c49a;
   text-align: center;
 }
@@ -43,7 +42,6 @@
 }
 
 .contenedor .overlay .fecha {
-  font-family: "Roboto";
   color: #f9c49a;
   text-align: center;
 }
@@ -156,24 +154,6 @@ aside img {
   height: 80px;
 }
 
-.card-title {
-  font-family: "Press Start 2P";
-  font-size: 5rem;
-  color: #bd682f;
-}
-
-@media screen and (max-width: 576px) {
-  .card-title {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .card-title {
-    font-size: 2rem;
-  }
-}
-
 .card-text {
   font-size: 1.5rem;
 }
@@ -186,7 +166,6 @@ aside img {
 
 h3 .titulo, p .titulo {
   color: black;
-  font-family: "Roboto";
   font-weight: bolder;
 }
 
@@ -218,5 +197,47 @@ footer {
 footer h3 .red {
   text-decoration: none;
   color: #F5F4F2;
+}
+
+h1 {
+  font-family: "Roboto";
+}
+
+h2 {
+  font-family: "Roboto";
+}
+
+h3 {
+  font-family: "Roboto";
+}
+
+h4 {
+  font-family: "Roboto";
+}
+
+h5 {
+  font-family: "Roboto";
+}
+
+.titulo-video {
+  color: #bd682f;
+}
+
+@media screen and (min-width: 992px) {
+  .titulo-video {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .titulo-video {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .titulo-video {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
