@@ -9,7 +9,8 @@ header {
     background-color: $color-principal;
 }
 
-nav {
+ul {
+    position: 40%;
     font-size: 1.4rem;
     font-family: $font-principal;
     background-color: $color-principal;
@@ -171,10 +172,9 @@ footer {
     }
 }
 
-@if $theme == Dark {
-    body {
-        background-color: $dark-body;
-    }
+.dark_theme {
+    
+    background-color: $dark-body;
 
     p {
         color: white;
@@ -192,16 +192,13 @@ footer {
         }
     }
 
-    header {
-        background-color: $dark-color-principal;
-    }
 
-    nav {
-        background-color: $dark-color-principal;
-    }
-
-    footer {
+    aside {
         background-color: $dark-color-secundario;
+    }
+
+    p a {
+        color: white;
     }
 
 }
