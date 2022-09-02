@@ -1,3 +1,3 @@
-# Web-CoderHouse
+# Pixelnews Web
 
-Pagina web creada para el curso de desarrollo web de Coder House con la utilizacion de HTML5, CSS, SCSS y BootStrap.
+Web page created with HTML5, CSS, SCSS and BootStrap.
